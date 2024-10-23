@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Don't Touch Me Button</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<title>Don't Touch Me Button</title>
+<link rel="shortcut icon" sizes="16x16" href="https://www.northernsun.com/images/image16x16/576x576/0836.png">
 </head>
-<!-- Cascading Style Sheets -->
-    <script src="style.css">
+<!-- CSS -->
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -66,8 +63,11 @@ button:hover {
     opacity: 1;
 }
 </style>
-<!-- Java Script -->
+<!-- JS -->
 <script>
+const button = document.getElementById("dont-touch-button");
+const hackingEffect = document.getElementById("hacking-effect");
+
 // Function to keep the button away from the mouse cursor
 document.addEventListener("mousemove", function(event) {
     // Get the button's position
@@ -106,7 +106,8 @@ button.addEventListener("click", function() {
     // You can add additional hacking animation or text here
 });
 </script>
-<!-- Hypertext Markup Language -->
+<!--HTML -->
+<html>
 <body>
     <main>
         <p>Try to hover over the button below:</p>
