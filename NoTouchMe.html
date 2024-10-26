@@ -38,11 +38,24 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    background-image: url("https://images.squarespace-cdn.com/content/v1/609701bc21f2ee5734517421/1652755900139-27PIZO9SGSY06C41YMN3/Rainbow+Gradient+Cover+WM+2.jpg?format=1500w");
-    background-repeat: no-repeat;
-  background-size: cover;
-      color: white;
+transition: background-color 0.3s;
+/* Replacing the static image background with an animated rainbow background */
+background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+background-size: 200% 200%;
+animation: rainbow 10s linear infinite;
+background-repeat: no-repeat;
+color: white;
+
+/* Rainbow animation keyframes */
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 }
 
 button:hover {
